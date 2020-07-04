@@ -51,6 +51,7 @@ p2{
   text-align: left;
   font-size: 45px;
   margin-right: 700px;
+  text-decoration: underline;
 }
 p3{
   font-size: 30px;
@@ -88,8 +89,12 @@ nam{
 
 }
 abt{
-  margin-left: 490px;
+  margin-left: 200px;
 }
+BC{
+  border:5px;
+}
+    
 fas, swa, sna{
   font-size:50px;
 }
