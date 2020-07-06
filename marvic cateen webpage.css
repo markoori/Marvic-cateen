@@ -79,10 +79,8 @@ can{
 
 }
 p6{
-  margin-top: 200px;
   font-size: 30px;
   text-align: center;
-  margin-left: 400px;
   background-color:blue;
 }
 nam{
@@ -99,6 +97,7 @@ BC{
 fas, swa, sna{
   font-size:50px;
   font-weight: bold;
+  font-decoration: underline;
 }
 ul > li{
   font-size:30px;
@@ -188,10 +187,8 @@ can{
 
 }
 p6{
-  margin-top: 200px;
   font-size: 30px;
   text-align: center;
-  margin-left: 400px;
   background-color:blue;
 }
 nam{
@@ -207,6 +204,8 @@ BC{
     
 fas, swa, sna{
   font-size:50px;
+  text-decoration: underline;
+  
 }
 ul > li{
   font-size:30px;
