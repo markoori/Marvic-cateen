@@ -214,11 +214,13 @@ ul > li{
   background-color: #e8617c;
   
   }
-}
+
 input{
   height: 30px;
   width: 300px;
   text-align: center;
+  font-size: 15px;
 }
+  }
   
   
