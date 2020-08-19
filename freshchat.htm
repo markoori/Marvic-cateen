@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+  function initFreshChat() {
+  window.fcWidget.init({
+    token: "3125ba9e-908e-49ed-8060-e20750840418",
+    host: "https://wchat.freshchat.com"
+  });
+}
+function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))} function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+
+
+// Copy the below lines under window.fcWidget.init inside initFreshChat function in the above snippet
+
+// To set unique user id in your system when it is available
+window.fcWidget.setExternalId("john.doe1987");
+
+// To set user name
+window.fcWidget.user.setFirstName("John");
+
+// To set user email
+window.fcWidget.user.setEmail("john.doe@gmail.com");
+
+// To set user properties
+window.fcWidget.user.setProperties({
+  plan: "Estate",                 // meta property 1
+  status: "Active"                // meta property 2
+});
+</script>
+</html>
