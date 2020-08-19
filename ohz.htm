@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="ohz.css">
+    <link rel="javascript" href="ohz.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+<body onload="myFunction()">
+
+  <div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+     <nav class="nav">
+       <p class="glow"><b>Openheaven teens</b></p>
+       <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br><br><br>
+         <a href="ohz.htm">Home</a>
+         <a href="biblestudyohts.htm">Bible study</a>
+         <a href="recenteaching.htm">Recent teaching</a>
+         <a href="galleryohts.htm">Gallery</a>
+         <a href="#">Library</a>
+         <a href="upcomingevent.htm">Upcoming events</a>
+         <a href="aboutohts.html">About</a>
+         <a href="contactohts.htm">Contact us</a>
+         <a href="#"><button onclick="myFunctiond()">Toggle dark mode</button></a>
+       </div>
+       <ul>
+       <li><a class="search" href="search.htm"><i class="fa fa-fw fa-search"></i></a></li>
+       <li><span class="navlinks" onclick="openNav()">&#9776;</span></li>
+       <ul>
+     </nav>
+
+
+
+         <!--slideshow-->
+     <div class="slideshow-container">
+
+     <div class="mySlides fade">
+       <img src="img/BeautyPlus_20170808084437_save.jpg" height="500px" width="100%">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="fast food.jpg" style="width:100%; height:500px">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="spaghetti.jpeg" style="width:100%; height:500px">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="spaghetti.jpeg" style="width:100%; height:500px">
+     </div>
+
+     <div class="mySlides fade">
+       <img src="spaghetti.jpeg" style="width:100%; height:500px">
+     </div>
+
+     </div>
+     <br>
+
+     <div style="text-align:center">
+       <span class="dot"></span>
+       <span class="dot"></span>
+       <span class="dot"></span>
+       <span class="dot"></span>
+       <span class="dot"></span>
+     </div>
+
+<!--backtotop-->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">navigation</i></button>
+
+        <div class="Ohd">
+          <h1> Today's Open heaven devotion for teens</h1>
+          <p>for 30th march,2020</p>
+          <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </pre>
+
+
+          <!--social media plateforms-->
+
+        </div>
+
+        <div class="quote">
+          <h3>Quote for the day</h3>
+          <p> Foolishness is a sign of wisdom </p>
+          <a href="#!" class="btn waves-effect waves-teal">Send</a>
+        </div>
+        <div class="icon-bar">
+          <div id="social">
+               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+               <a href="#" class="google"><i class="fa fa-google"></i></a>
+               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+               <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+               <a class="close" onclick="closeSoc()"><i class="large-material-icons">close</i></a>
+         </div>
+        <div class="open" id="opens" onclick="openSoc()"><i class="large-material-icons">add</i></div>
+        </div>
+
+
+      </div>
+  </body>
+
+  <script type="text/javascript" src="js/materialize.min.js">
+
+
+//loader
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+
+
+
+
+  //navlinks script
+
+
+
+  function openNav() {
+    document.getElementById("mySidenav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.height = "0%";
+  }
+
+
+
+
+ //slideshow's script
+
+
+
+
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+
+
+
+  //Get the button
+
+
+
+
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 6 || document.documentElement.scrollTop > 6) {
+      mybutton.style.display = "block";
+
+    } else {
+      mybutton.style.display = "none";
+    }
+    setTimeout(scrollFunction, 5000);
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+
+/*social media*/
+
+function openSoc() {
+  document.getElementById("social").style.display = "block";
+    document.getElementById("opens").style.display = "none";
+}
+function closeSoc() {
+  document.getElementById("social").style.display = "none";
+  document.getElementById("opens").style.display = "block";
+
+}
+
+/*darkmode*/
+
+function myFunctiond() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+
+function initFreshChat() {
+  window.fcWidget.init({
+    token: "3125ba9e-908e-49ed-8060-e20750840418",
+    host: "https://wchat.freshchat.com"
+  });
+}
+function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))} function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
+  
+</html>
