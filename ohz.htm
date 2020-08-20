@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <title></title>
      <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="ohz.css">
+    <link rel="stylesheet" href="ohz2.css">
     <link rel="javascript" href="ohz.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   </head>
 
 <body onload="myFunction()">
@@ -126,11 +127,12 @@
 
         </div>
 
-        <div class="quote">
+        <div class="quote2">
           <h3>Quote for the day</h3>
           <p> Foolishness is a sign of wisdom </p>
-          <a href="#!" class="btn waves-effect waves-teal">Send</a>
         </div>
+
+
         <div class="icon-bar">
           <div id="social">
                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -138,16 +140,112 @@
                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-               <a class="close" onclick="closeSoc()"><i class="large-material-icons">close</i></a>
+               <a class="close" onclick="closeSoc()"><i class="large material-icons">close</i></a>
          </div>
-        <div class="open" id="opens" onclick="openSoc()"><i class="large-material-icons">add</i></div>
+        <div class="open" id="opens" onclick="openSoc()"><i class="large material-icons">add</i></div>
         </div>
 
 
+
+
+
+        <div class="recentpost">
+              <h2>Recent Posts</h2>
+              <div class="row">
+                <div class="column">
+                  <a href="recenteaching.htm#speak" target="_blank">
+                  <img src="img_snow.jpg" alt="Tongues" style="width:100%">
+                  <p>Speaking in tongues</p></a>
+                </div>
+                <div class="column">
+                  <a href="#" target="_blank">
+                  <img src="img/others/holyspirit2.jpg" alt="dove" style="width:100%">
+                  <p>The Holy Spirit</p></a>
+                </div>
+                <div class="morep">
+                <a href="recenteaching.htm"><p> more posts..</p></a>
+                </div>
+
+        </div>
       </div>
+
+
+        <div class="others">
+          <a href="galleryohts.htm"><button>To get messages and music visit our gallery</button></a><br><br>
+          <a href="libraryohts.htm"><button>To get E-book visit our Library<button></a>
+        </div><br><br><hr>
+
+
+
+
+
+          <div class="radio">
+            <img src="img/others/rccgradio.png" alt="radio logo">
+            <h3>Listen to amazing musics from amazing gospel artists.That's not all, you can also get to rccg's radio channel</h3>
+            <a href="https://myrccgradio.com/"><button>Visit</button></a>
+          </div>
+
+           <div class="live">
+             <a href="https://rccgworld.org/rccg/"> <button class="button"><span> Watch LIVE! </span></button></a>
+           </div>
+
+
+        <div class="rccgc">
+
+
+        </div>
+
+
+        <div class="color">
+
+        </div>
+
+    <footer>
+            <p class="footerf">subscribe to get Update of upcoming posts</p>
+           <form class="" action="mailto:mark65209@gmail.com" method="post">
+             <div class="sub">
+               <input type="text" name="subscribe" value="" placeholder="Enter email">
+               <input type="submit" name="send" value="subscribe">
+
+                <div class="socialm">
+                  <p>follow us at</p>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                </div>
+             </div>
+           </form>
+    </footer>
+
+<div class="color">
+
+</div>
+<hr><br><br><br>
+<div class="rccgl">
+  <img src="img/others/rccg-logo.png" alt="rccg logo" width="50px" height="50px" style="position:relative; left:44%">
+</div>
+<div class="Copy" style="font-size:15px;text-align:center">
+ <p> &copy; Copyright RCCG open heaven teens 2020. All Right Reserved. Designed and Developed by RCCG OHTs developer </p><br><br><br><br>
+</div>
+
+
+
+
+
+<!--call header-->
+
+ <div class="callout">
+   <div class="callout-header">Welcome!, or should i say, Welcome again</div>
+   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+   <div class="callout-container">
+     <p>Welcome to open heaven teens website/webapp.<br><br> This website/webapp is seriously under development and as such it is not designed for pc's size display yet <br><br>
+        close it if it is in your way.</p>
+   </div>
+ </div>
+
+  </div>
   </body>
 
-  <script type="text/javascript" src="js/materialize.min.js">
+  <script>
 
 
 //loader
@@ -255,26 +353,32 @@ function myFunctiond() {
 }
 
 
+
+
 function initFreshChat() {
-  window.fcWidget.init({
-    token: "3125ba9e-908e-49ed-8060-e20750840418",
-    host: "https://wchat.freshchat.com"
-  });
+window.fcWidget.init({
+  token: "3125ba9e-908e-49ed-8060-e20750840418",
+  host: "https://wchat.freshchat.com"
+});
 }
 function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))} function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 
-window.fcWidget.setExternalId("john.doe1987");
+
+// Copy the below lines under window.fcWidget.init inside initFreshChat function in the above snippet
+
+// To set unique user id in your system when it is available
+window.fcWidget.setExternalId("developer");
 
 // To set user name
-window.fcWidget.user.setFirstName("John");
+window.fcWidget.user.setFirstName("Mark");
 
 // To set user email
 window.fcWidget.user.setEmail("john.doe@gmail.com");
 
 // To set user properties
 window.fcWidget.user.setProperties({
-  plan: "Estate",                 // meta property 1
-  status: "Active"                // meta property 2
+plan: "Estate",                 // meta property 1
+status: "Active"                // meta property 2
 });
 </script>
 
